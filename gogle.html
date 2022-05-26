@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta name="gogle" content="width=device-width, initial-scale=1">
+  <style>
+      img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
 
+      .button {
+        font-style: italic;
+      }
 
-<meta name="gogle" content="width=device-width, initial-scale=1">
-<style>
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-</style>
+      .text-center {
+        text-align: center;
+      }
+
+      .centered-row {
+        display: flex;
+        justify-content: center;
+      }
+
+      .centered-row > button {
+        margin-left: 10px;
+      }
+  </style>
+</head>
+<body>
 
 
 
 
 <div class="container">
     <div id="content">
-        <form class='form-inline'>
+        <form>
             <div class="input-group">
-                <input type='text' id='search' class="form-control search-form" placeholder="More Gogle">
-                <span class="input-group-btn" style="width:39px">
-                    <button id="search-this" type="button" class="pull-right btn btn-default search-btn">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </span>
+                <input type='text' id='search' placeholder="More Gogle">
+                <button id="search-this" type="button" class="button">
+                    JAMBO
+                </button>
             </div>
         </form>
 
@@ -32,16 +48,15 @@
 
     </div>
 </div>
-<p>i am a form, centered:</p>
+<p class="text-center">i am a form, centered:</p>
 <p>Hello</p>
 <form> <img src="gogle.png" alt="ohno.com" class="center"> </form>
 
-<input type="text" placeholder="Search Bar" name="search" class="center">
-<button type="submit"><i class="fa fa-search"></i> Search</button>
-<div>
-    </form>
+<div class="centered-row">
+  <input type="text" placeholder="Search Bar" name="search" class="center">
+  <button type="submit"><i class="fa fa-search"></i> Search</button>
+</div>
 
-    </head>
-
+</body>
 
 </html>
