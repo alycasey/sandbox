@@ -29,7 +29,6 @@
         }
 
         div {
-            background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
             height: 20px;
             width: 40%;
         }
@@ -57,28 +56,63 @@
         .button {
             font-style: italic;
         }
+
+
+
+        .form {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .search-field {
+            width: 100%;
+            padding: 10px 35px 10px 15px;
+            border: 100px;
+            border-radius: 100px;
+            outline: none;
+        }
+
+        .search-button {
+            background: transparent;
+            border: none;
+            outline: none;
+            margin-left: -33px;
+        }
+
+        .search-button img {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+        }
     </style>
 </head>
 
 <body>
-    <div class="text-center" style="margin-top: 20px;">
+    <div class="text-center" style="margin-top: 20px ;
 
-        <button type="button"> Results</button>
+<div class=" container">
+        <form action="/" method="GET" class="form">
+            <input type="search" placeholder="Search" class="search-field" />
+            <button type="submit" class="search-button">
+                <img src="mag.png">
+            </button>
+        </form>
     </div>
-    <p class="text-center space-above">
-        <span style="font-weight: bold;">
-            About 472,000 results (0.90 seconds)
-        </span>
-    </p>
+
+
+
 
     <img src="gogle.png" alt="ohno.com" class="text-center">
 
     <form>
         <div class="text-center">
-            <input type="text" placeholder="Results" search class="search-bar">
             <button type="submit"> Search</button>
         </div>
         <div class="text-center" style="margin-top: 20px;">
+            <span style="font-weight: bold;">
+                About 472,000 results (0.90 seconds)
+            </span>
+            </p>
 
 
             <div class="text-center" style="margin-top: 20px;">
