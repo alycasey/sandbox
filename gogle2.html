@@ -25,6 +25,7 @@
             color: aquamarine;
             text-decoration: underline;
             cursor: pointer;
+            text-align: center;
 
         }
 
@@ -46,6 +47,9 @@
 
         .text-center {
             text-align: center;
+            cursor: pointer;
+
+
         }
 
         .centered-row {
@@ -79,6 +83,11 @@
             margin-left: -33px;
         }
 
+        .search-bar {
+            border-radius: 20px;
+            padding: 4px 6px;
+        }
+
         .search-button img {
             width: 20px;
             height: 20px;
@@ -87,59 +96,27 @@
     </style>
 </head>
 
-<body>
-    <div class="text-center" style="margin-top: 20px ;
+<form>
+    <div class="text-center">
+        <input type="text" placeholder="Search Bar" name="search" class="search-bar">
 
-<div class=" container">
-        <form action="/" method="GET" class="form">
-            <input type="search" placeholder="Search" class="search-field" />
-            <button type="submit" class="search-button">
-                <img src="mag.png">
-            </button>
-        </form>
+        <button type="submit"> Search</button>
+
     </div>
+    <div class="text-center" style="margin-top: 20px;">
 
-    <p id="mathpain"></p>
+        <img src="gogle.png" alt="ohno.com" class="text-center">
 
-    <script>
-        document.getElementById("mathpain").innerHTML = 19 + 23;
-    </script>
+        <p style="text-align:center">About 472,000 results (0.90 seconds)</p>
 
+        <span> <b>Related Searches</b></span>
 
-    <button onclick="document.getElementById('time').innerHTML=Date()">The time is?</button>
-
-    <p id="time"></p>
-
-
-    <img src="gogle.png" alt="ohno.com" class="text-center">
-
-    <form>
-        <div class="text-center">
-            <button type="submit"> Search</button>
-        </div>
-        <div class="text-center" style="margin-top: 20px;">
-            <span style="font-weight: bold;">
-                About 472,000 results (0.90 seconds)
-            </span>
-            </p>
-
-
-            <div class="text-center" style="margin-top: 20px;">
-
-                <button type="button"> See more</button>
-            </div>
-            <span>Related searches</span>
+        <div class="related-search">rorfly's of philly</div>
+        <div class="related-search">coffin couture</div>
+        <div class="related-search">gogle knows all</div>
 
 
 
-            <p class="centered-row">
-            <div class="related-search">rorfly's of philly</div>
-            <div class="related-search">coffin couture</div>
-            <div class="related-search">gogle knows all</div>
-            </p>
-        </div>
-
-
-</body>
+        </body>
 
 </html>
