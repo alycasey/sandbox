@@ -93,30 +93,56 @@
             height: 20px;
             object-fit: cover;
         }
+
+        .img source {
+            flex: 1 0 auto;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            border: 0;
+            background: transparent;
+            outline: none;
+            padding: 0 8px;
+            width: 24px;
+            line-height: 44px;
+        }
+
+        .input [type="search"] {
+            color: blueviolet
+        }
     </style>
 </head>
 
-<form>
-    <div class="text-center">
-        <input type="text" placeholder="Search Bar" name="search" class="search-bar">
-
-        <button type="submit"> Search</button>
-
-    </div>
-    <div class="text-center" style="margin-top: 20px;">
-
-        <img src="gogle.png" alt="ohno.com" class="text-center">
-
-        <p style="text-align:center">About 472,000 results (0.90 seconds)</p>
-
-        <span> <b>Related Searches</b></span>
-
-        <div class="related-search">rorfly's of philly</div>
-        <div class="related-search">coffin couture</div>
-        <div class="related-search">gogle knows all</div>
+<body>
+    <nav>
+        <div class="text-center">
+            <input type="text" placeholder="Search Bar" name="search" class="search-bar" img src="mag.png">
 
 
+            <button>Sign In</password>
+                <button type="submit"> Search</button>
 
-        </body>
+        </div>
+
+
+    </nav>
+
+    <form>
+
+        <div class="text-center" style="margin-top: 20px;">
+
+            <img src="gogle.png" alt="ohno.com" class="text-center">
+
+            <p style="text-align:center">About 472,000 results (0.90 seconds)</p>
+
+            <span> <b>Related Searches</b></span>
+
+            <div class="related-search">rorfly's of philly</div>
+            <div class="related-search">coffin couture</div>
+            <div class="related-search">gogle knows all</div>
+
+
+
+</body>
 
 </html>
