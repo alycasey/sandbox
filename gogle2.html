@@ -32,6 +32,8 @@
         div {
             height: 20px;
             width: 40%;
+            display: block;
+
         }
 
         img {
@@ -48,7 +50,11 @@
         .text-center {
             text-align: center;
             cursor: pointer;
+        }
 
+        .text-left {
+            text-align: left;
+            cursor: pointer;
 
         }
 
@@ -107,7 +113,7 @@
             line-height: 44px;
         }
 
-        .input [type="search"] {
+        .search-bar[type="text"] {
             color: blueviolet
         }
     </style>
@@ -116,32 +122,39 @@
 <body>
     <nav>
         <div class="text-center">
-            <input type="text" placeholder="Search Bar" name="search" class="search-bar" img src="mag.png">
+            <input type="text" placeholder="Search Bar" name="search" class="search-bar" img src="mag.png" />
 
 
-            <button>Sign In</password>
-                <button type="submit"> Search</button>
+            <button>Sign In </button>
+            <button type="submit"> Search</button>
 
         </div>
 
 
     </nav>
 
+
+
     <form>
 
         <div class="text-center" style="margin-top: 20px;">
 
-            <img src="gogle.png" alt="ohno.com" class="text-center">
+            <img src="gogle.png" alt="ohno.com" />
 
+
+            <button> <span> <b>Images</b></span></button>
+            <button><span><b>Shopping</b></span></button>
+            <button><span><b>Videos</b></span></button>
+            <button><span><b>News</b></span></button>
+            <button><span><b>More</b></span></button>
+            <button><span><b>Tools</b></span></button>
             <p style="text-align:center">About 472,000 results (0.90 seconds)</p>
-
-            <span> <b>Related Searches</b></span>
-
             <div class="related-search">rorfly's of philly</div>
             <div class="related-search">coffin couture</div>
             <div class="related-search">gogle knows all</div>
 
-
+        </div>
+    </form>
 
 </body>
 
