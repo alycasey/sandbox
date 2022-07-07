@@ -10,7 +10,7 @@
         .block,
         li {
             border: solid thin red;
-            padding: .5em;
+            padding: 3em;
         }
 
         ul {
@@ -21,6 +21,22 @@
         .block {
             display: block;
         }
+
+        .box {
+            border: 5px solid red;
+            padding: 80px;
+            margin: 400px;
+            width: 300px;
+            height: 150px;
+            margin-top: -200px;
+            margin-right: 30px;
+            margin-bottom: 40px;
+            margin-left: 4em;
+        }
+
+        .alternate {
+            box-sizing: border-box;
+        }
     </style>
 
 </head>
@@ -28,11 +44,15 @@
 <body>
     <p>red boxes</p>
     <p>bleep <span class="block">moop</span> <span></span></p>
+    <div class="box">words</div>
+    <div class="box alternate">b o x</div>
 
     <ul>
-        <li>boop</li>
+        <li><code>boop</code></li>
         <li>beep</li>
         <li>meep</li>
+        <li><code>peep</code></li>
+        <li><code>boop</code></li>
     </ul>
     <p>bleep <span class="block">moop</span> <span></span></p>
     <ul>
