@@ -113,6 +113,56 @@
         p span {
             display: block;
         }
+
+        body {
+            background: #000;
+        }
+
+        .neon {
+            font-family: 'Monoton', cursive;
+            font-size: 130px;
+            color: #FFD5FF;
+            position: relative;
+            margin-left: 650px;
+            margin-top: 50px;
+            transform: translate(-50%, -50%);
+            font-weight: 400;
+            letter-spacing: 10px;
+            text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA, 40px 0vw 200px #D42CCA;
+        }
+
+        .flicker-slow {
+            animation: flicker 3s linear infinite;
+        }
+
+        .flicker-fast {
+            animation: flicker 1s linear infinite;
+        }
+
+        @keyframes flicker {
+
+            0%,
+            19.999%,
+            22%,
+            62.999%,
+            64%,
+            64.999%,
+            70%,
+            100% {
+                //text-shadow: none;
+                opacity: .99;
+
+            }
+
+            20%,
+            21.999%,
+            63%,
+            63.999%,
+            65%,
+            69.999% {
+                opacity: 0.4;
+            }
+        }
     </style>
 </head>
 
@@ -120,6 +170,10 @@
     <div class="header">
         <h1>Welcome to hell!!!!</h1>
         <p>Samples and much much less</p>
+        <p>
+        <h1 class="neon" data-text="U">Aly<span class="flicker-slow">CA</span>S<span class="flicker-fast">E</span>Y
+        </h1>
+        </p>
     </div>
     <div class="navbar"><a href="http://google.com">Link</a><a href="http://google.com">Link</a><a
             href="http://google.com">Link</a><a href="http://google.com" class="right">Link</a>
@@ -127,6 +181,8 @@
     <div class="row">
         <div class="side">
             <h2>About Me</h2>
+
+
             <h5>Photo of me:</h5>
             <img src="fakeimg.png" style="height:200px;" />
 
