@@ -143,27 +143,37 @@
 
         @keyframes flicker {
 
-            0%,
-            19.999%,
-            22%,
-            62.999%,
-            64%,
-            64.999%,
-            70%,
-            100% {
-                //text-shadow: none;
-                opacity: .99;
-
+            0% {
+                opacity: 1;
+                color: purple;
             }
 
-            20%,
-            21.999%,
-            63%,
-            63.999%,
-            65%,
+            19.999% {
+                opacity: 0.3;
+                color: pink;
+            }
+
+            50% {
+                opacity: 0.5;
+                color: #5D3FD3;
+            }
+
+
             69.999% {
-                opacity: 0.4;
+                opacity: 0.8;
+                color: #7c0963;
             }
+
+            100% {
+                opacity: .99;
+                color: #f584f2;
+
+            }
+
+
+
+
+        }
     </style>
 </head>
 
@@ -171,7 +181,16 @@
     <div class="header">
 
         <p>
-        <h1 class="neon" data-text="U">Aly<span class="flicker-slow">CA</span>S<span class="flicker-fast">E</span>Y
+        <h1 class="neon" data-text="U">
+            Aly
+            <span class="flicker-slow">
+                CA
+            </span>
+            S
+            <span class="flicker-fast">
+                E
+            </span>
+            Y
         </h1>
         </p>
 
@@ -195,7 +214,7 @@
 
             <p>links for you, eventually</p>
 
-            <h3 contenteditable spellcheck="false">open</h3>
+            <h3 contenteditable spellcheck="false">open me, you cowards</h3>
             <p>
             <div class="fakeimg">PDFinteractive (eventually) <a href="http://google.com">
                     Example link</a></div>
